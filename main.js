@@ -1,22 +1,26 @@
 const gridContainer = document.querySelector(".grid-container");
-let x = 4;
-let y = 4;
+let x = 80;
+let y = 80;
 let grid = { x, y };
 const total = grid.x * grid.y;
+
 document.addEventListener("DOMContentLoaded", makeGrid);
+
 function makeGrid() {
   for (let i = 0; i < total; i++) {
-    const html = `${i + 1}`;
+    const html = ``;
     const divBox = gridMaker("div", gridContainer, html);
+    console.log("div", gridContainer, html)
   }
   gridContainer.style.setProperty(
     `grid-template-columns`,
-    `repeat(${grid.y},1fr)`
+    `repeat(${grid.x}, 1fr)`
   );
 }
 
-function gridMaker(boxType, gridContainer, html) {
+function gridMaker(eleType, parent, html,) {
   const box = document.createElement("div");
   box.innerHTML = html;
-  return gridContainer.appendChild(box);
+  
+  return parent.appendChild(box).className = "grid-box";
 }
