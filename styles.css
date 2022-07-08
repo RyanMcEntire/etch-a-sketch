@@ -1,0 +1,14 @@
+.grid-container {
+  display: grid;
+  background-color: aquamarine;
+  margin: auto;
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+
+}
+
+.grid-box {
+  background-color: bisque;
+  border: 1px solid black;
+}
