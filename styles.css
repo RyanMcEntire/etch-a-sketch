@@ -3,7 +3,7 @@
   width: 400px;
   height: 400px;
   margin: auto;
-  border: 1px solid black;
+  border: 3px solid rgb(119, 61, 22);
 
 }
 
@@ -11,5 +11,15 @@
   text-align: center;
   font-size: 10px;
   background-color: rgb(255, 251, 246);
-  border: 1px solid rgb(231, 230, 221);
+  border: 1px solid rgb(233, 233, 233);
+  transition: 0ms 20ms;
+}
+/*
+.grid-box:hover {
+ background-color: rgb(97, 97, 97);
+  transition: 0ms;
+}
+*/
+.grid-box-draw {
+  background-color: rgb(97, 97, 97);
 }
