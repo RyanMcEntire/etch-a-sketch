@@ -2,19 +2,13 @@ const gridContainer = document.querySelector(".grid-container");
 
 let slider = document.getElementById("myRange");
 let output = document.getElementById("gridSize");
-output.textContent = slider.value;
-
-// for displaying the current number
-slider.oninput = function () {
-  output.innerHTML = this.value;
-  console.log(slider.value);
-};
+output.textContent = `${slider.value} x ${slider.value}`;
 
 const total = slider.value * slider.value;
 
 slider.oninput = function () {
   gridContainer.textContent = "";
-  output.textContent = this.value;
+  output.textContent = `${this.value} x ${this.value}`;
   console.log(slider.value);
 };
 

@@ -1,5 +1,27 @@
+body {
+  background-color: rgb(255, 250, 255);
+  
+}
+
 .slidecontainer {
   width: 100%;
+  display: flex;
+  max-width: 365px;
+  margin: auto;
+  border: 3px solid rgb(119, 61, 22);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: rgb(255, 251, 246);
+  filter: drop-shadow(8px 5px 8px rgb(192, 185, 192))
+}
+#gridSize {
+  align-items: center;
+}
+
+input {
+  justify-content: center;
+  margin: auto;
 }
 
 .grid-container {
@@ -8,14 +30,13 @@
   height: 400px;
   margin: auto;
   border: 3px solid rgb(119, 61, 22);
-
+  filter: drop-shadow(8px 5px 8px rgb(192, 185, 192));
 }
 
 .grid-box {
   text-align: center;
   background-color: rgb(255, 251, 246);
-  border: 1px solid rgb(233, 233, 233);
-  transition: 0ms 20ms;
+  //border: 1px solid rgb(233, 233, 233);
 }
 /*
 .grid-box:hover {
